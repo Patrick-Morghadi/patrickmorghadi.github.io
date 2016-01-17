@@ -1,0 +1,222 @@
+/*======================== MON CSS ====================================*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.cache {
+  visibility: hidden;
+}
+
+.container {
+  width: 100%;
+}
+
+.bgp {
+  background-image: repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  background-size: 70px 120px;
+  background-color: #21252b;
+}
+
+.bgd {
+  background-color: #21252b;
+}
+
+.bglt {
+  background-color: rgba(58, 76, 82,0.5);
+}
+.bgl{
+  background-color: #2d373e;
+}
+.bgw {
+  background-color: #fff;
+}
+
+.navbar-toggle {
+  display: inherit!important;
+  position: absolute;
+  right: 0px;
+  top:0px;
+  color: #fff;
+  z-index: 1000;
+}
+
+.icon-bar {
+  width: 100px;
+  background-color: #fff;
+}
+
+#logo {
+  width: 320px;
+}
+
+#logo2 {
+  width: 100%;
+  height: 70px;
+  margin-top:30px;
+}
+
+#logo2 img {
+  width: 170px;
+  margin-top: -20px;
+}
+
+#feuille {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  z-index: 5;
+}
+
+#typewriter {
+  max-width: 320px;
+  min-width: 260px;
+  margin-bottom: 20px;
+}
+
+#page li {
+  padding: 10px 10px 0 10px;
+  text-align: left;
+  font-weight: 300;
+  font: 25px 'Cutive Mono',serif;
+  text-align: left;
+}
+
+#page li a {
+  color: #21252b;
+  font-family: courier;
+}
+
+#page {
+  overflow: hidden;
+  position: relative;
+  bottom: -130px;
+  max-width: 220px;
+  min-height: 30px;
+  margin: 0 auto;
+  background: url(../img/rice-paper-2.png);
+  background-color: #fff;
+  box-shadow: 4px 3px 10px #000;
+  border-bottom: 10px solid #fff;
+  z-index: 3;
+}
+
+#page:target {
+  overflow: hidden;
+  position: relative;
+  bottom: -130px;
+  max-width: 220px;
+  height: auto;
+  box-shadow: 4px 3px 10px #000;
+  border-bottom: 10px solid #F3EFEC;
+  background: url(../img/rice-paper-2.png);
+  background-color: #fff;
+  z-index: 4;
+}
+
+#machine {
+  position: relative;
+  bottom: -100px;
+  z-index: 99;
+}
+
+#start-menu {
+  position: relative;
+  top: 20px;
+  font-family: "indie flower";
+  font-size: 30px;
+  color: #1e2127;
+  transform: rotate(-10deg);
+  z-index: 99;
+}
+
+#close-menu {
+  position: relative;
+  top: -100px;
+  font-family: "indie flower";
+  font-size: 25px;
+  color: #1e2127;
+  transform: rotate(-10deg);
+  z-index: 80;
+}
+
+#bloc-menu {
+  margin-top: 200px;
+  height: 150px;
+  width: 320px;
+  border-radius: 50%;
+}
+
+#about {
+  width: 100%;
+  margin: 200px auto;
+  color: #d5cab3;
+text-align: inherit;
+}
+
+#about p {
+  padding: 15px;
+  font-size: 20px;
+  font-family: "indie flower";
+}
+#avatar{
+  position: relative;
+  top:-50px;
+  left: 50px;
+  border-radius: 50%;
+  border: 4px solid #d3c2ab;
+}
+/*----------------------------Bloc menu side------------*/
+#bloc-menu2 {
+  position: fixed;
+  bottom: 10px;
+  width:320px;
+  height:auto;
+z-index: 150;
+}
+
+/*============================== Animation ==============*/
+.abi {
+  animation-duration: .5s;
+  animation-name: bounceIn;
+  -moz-transform-origin: 50% 50%;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,1 +1,93 @@
-"Hello world" 
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Patrick Morghadi Développeur </title>
+    <meta name="description" content="">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/BootSideMenu.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+  </head>
+<body class="bgp">
+
+
+<div class="container center">
+<a href="#" id="btn-menu"><img id="logo" class="middle " src="./img/logo.png" alt="logo"/></a>
+<div id="logo2"class="center bglt" ><img src="./img/logo2.png" alt="logo"/></div>
+
+
+  <div id="bloc-menu" class="middle bglt abi ">
+      <div id="feuille" class="monbloc center">
+
+        <div id="page">
+          <ul id="liste_menu">
+          </ul>
+        </div>
+
+        <ul id="menu"  class="hide">
+          <li id="menu0" class="cachetoi">À PROPOS</li>
+          <li id="menu1" class="cachetoi">PORTFOLIO</li>
+          <li id="menu2" class="cachetoi">CONTACT</li>
+        </ul>
+
+        <div id="machine" class="center">
+
+          <img src="./img/vect-typew.png" alt="" id="typewriter" />
+
+        </div>
+        <a  href="#page" class="start" onclick="frameLooper();"><div id="start-menu">Menu</div></a>
+          <a  href="index.html" class="cache"><div id="close-menu">Accueil</div></a>
+
+      </div>
+  </div><!---Fin bloc-menu-->
+
+
+</div><!---Fin container-->
+
+
+
+
+
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/scripts.js" charset="utf-8"></script>
+
+   <script>
+   //centrage div:
+   $(document).ready(function() {
+  // $(window).resize() est appelée chaque fois que la fenêtre est redimensionnée par l'utilisateur.
+     $(window).resize(function() {
+       $(".middle").css({
+         position:'absolute',
+         left:($(window).width() - $(".middle").outerWidth()) / 2,
+         top:($(window).height() - $(".middle").outerHeight()) / 2
+       });
+     });
+   });
+
+   $(window).load(function() {
+     // au chargement complet de la page, la fonction resize() est appelée une fois pour initialiser le centrage.
+     $(window).resize();
+   });
+//MENU
+              $("#bloc-menu").hide();
+              $( "#logo2" ).hide();
+          $("#btn-menu").click(function(){
+              $("#bloc-menu").show();
+              $("#logo").hide();
+              $( "#logo2" ).show("slow");
+          });
+          $("#bloc-menu").hide();
+
+      $("#start-menu").click(function(){
+          $("#start-menu").addClass("cache");
+          $( "#close-menu" ).removeClass("cache");
+      });
+
+   </script>
+</body>
+</html>
